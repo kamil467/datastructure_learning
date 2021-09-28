@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  kafkaZooKeeper:
+          image: confluentinc/cp-zookeeper
+          container_name: zookeeper
+         
+  broker:
+           image: confluentinc/cp-kafka
+           container_name: broker
+           depends_on:
+             - kafkaZooKeeper
+          
+  blazorapp:
+    image: ${DOCKER_REGISTRY-}blazorappkamil
+    container_name: webclient
+    depends_on:
+        - weatherapp
+
+  weatherapp:
+     image: ${DOCKER_REGISTRY-}kamilservice:latest
+     container_name: webservice
+     depends_on:
+       - broker

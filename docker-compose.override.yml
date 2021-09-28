@@ -1,0 +1,54 @@
+version: '3.4'
+
+services:
+
+# Kafkazookeeper dev configuration
+  kafkaZooKeeper:
+      environment:
+            - ZOOKEEPER_CLIENT_PORT=2181
+            - ZOOKEEPER_TICK_TIME=2000
+      ports:
+            - "2181:2181"
+# broker dev configuration
+  broker:
+    environment:
+               # Zookeeper port we can reference it via container name or docker name since zookeeper and brokers are running on same docker network
+             - KAFKA_ZOOKEEPER_CONNECT=kafkaZooKeeper:2181 
+              # A broker can have multiple liteners - To communicate with another broker and communicate with clients(producer /consumer)
+              # we defined LISTENER_VILLAGE AS broker since it connect with other brokers on socker network.
+             - KAFKA_LISTENERS=LISTENER_VILLAGE://broker:29092,LISTENER_CITY://broker:9092
+             # define listeners protocol
+             - KAFKA_LISTENER_SECURITY_PROTOCOL_MAP=LISTENER_VILLAGE:PLAINTEXT,LISTENER_CITY:PLAINTEXT
+             - KAFKA_ADVERTISED_LISTENERS=LISTENER_VILLAGE://broker:29092,LISTENER_CITY://broker:9092  
+             - KAFKA_BROKER_ID=1
+             - KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=3
+             # to  communicate with borkers inside the cluster
+             - KAFKA_INTER_BROKER_LISTENER_NAME=LISTENER_VILLAGE
+
+    ports:
+              - "29092:29092"
+              -  "9092:9092"         
+
+# Blazor server app dev configuration 
+  blazorapp:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - Endpoints:weatherapi=http://weatherapp/api/weatherforecast
+      - Endpoints:CustomerAPI=http://weatherapp/api/customer/post-customer
+    ports:
+      - "5103:80"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+# API server app dev configuration
+  weatherapp:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - KafkaConfig:Endpoints=broker
+      - KafkaConfig:Topic:my-kafka-topic
+    ports:
+      - "5102:80"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+
