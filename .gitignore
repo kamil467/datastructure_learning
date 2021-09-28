@@ -1,0 +1,6 @@
+# Ignore everything
+*
+# but not below
+!.gitignore
+!.docker-compose.yml
+!.docker-compose.override.yml
