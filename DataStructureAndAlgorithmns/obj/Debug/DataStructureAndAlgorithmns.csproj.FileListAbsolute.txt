@@ -1,0 +1,8 @@
+C:\Users\Qburst\source\repos\DataStructureAndAlgorithmns\bin\Debug\DataStructureAndAlgorithmns.exe.config
+C:\Users\Qburst\source\repos\DataStructureAndAlgorithmns\bin\Debug\DataStructureAndAlgorithmns.exe
+C:\Users\Qburst\source\repos\DataStructureAndAlgorithmns\bin\Debug\DataStructureAndAlgorithmns.pdb
+C:\Users\Qburst\source\repos\DataStructureAndAlgorithmns\obj\Debug\DataStructureAndAlgorithmns.csproj.AssemblyReference.cache
+C:\Users\Qburst\source\repos\DataStructureAndAlgorithmns\obj\Debug\DataStructureAndAlgorithmns.csproj.SuggestedBindingRedirects.cache
+C:\Users\Qburst\source\repos\DataStructureAndAlgorithmns\obj\Debug\DataStructureAndAlgorithmns.csproj.CoreCompileInputs.cache
+C:\Users\Qburst\source\repos\DataStructureAndAlgorithmns\obj\Debug\DataStructureAndAlgorithmns.exe
+C:\Users\Qburst\source\repos\DataStructureAndAlgorithmns\obj\Debug\DataStructureAndAlgorithmns.pdb
