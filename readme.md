@@ -1,3 +1,19 @@
+##### Topics to Prepare.
+
+1. Arrays and strings
+2. Linked lists
+3. Hashmaps and sets
+4. Stacks and queues
+5. Trees and graphs
+6. Heaps
+7. Greedy algorithms
+8. Binary search
+9. Backtracking
+10. Dynamic programming
+
+
+
+
 ******************************************************************************************************************************************************************
 1. Singly Linked List
 2. Double linked List - (Front & Back direction)
