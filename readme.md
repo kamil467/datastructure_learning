@@ -189,7 +189,7 @@ Using Stack -> every node visited in link list put that node into stack.
             -> pop the node, it maintains the reversal order.
 
 ##### Approach 2:
-Using 3 pointers approach.
+Using 3 pointers approach. Youtube ref : https://www.youtube.com/watch?v=NhapasNIKuQ&ab_channel=NickWhite
     Eg : 10->20->30   
      We need move the link position. at the end , we should get 10 <- 20 <- 30.
     
