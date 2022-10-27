@@ -32,8 +32,8 @@ C# - We need two classes ( 1. Node , 2. LinkedList structure to hold and oragniz
 ##### 1.How do we put new node into Head ?
 
 Answer :
-a)move the current head node to next node
-b)set new node as head node.
+a) move the current head node to next node
+b) set new node as head node.
 
 Application : print numbers in reverse order.
 
@@ -42,6 +42,8 @@ Application : print numbers in reverse order.
 
 a) If head is null then set new node as Head 
 b) Traverse in the node where node.NextNode= null. --This is our last node --use while loop -- then set lastNode.NextNode = new Node.
+                 or 
+Keep a track of tail node and add a new node as tail.next.                 
 
 ---------------------------------------------------------------------------------------------------------
 
