@@ -182,7 +182,35 @@ Eg :
               2) P2 - Move by One node.
               3) If both are meeting each other then there is a loop persent in the list.
 
-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+#### 7. Reversal of Linked List.
+##### Approach 1:
+Using Stack -> every node visited in link list put that node into stack.
+            -> pop the node, it maintains the reversal order.
+
+##### Approach 2:
+Using 3 pointers approach.
+    Eg : 10->20->30   
+     We need move the link position. at the end , we should get 10 <- 20 <- 30.
+    
+     Steps:
+
+        1. current = head, prev = null , next = null;
+
+        2. We should remove link between head and next node, so store the current.next ref into next varaiable.
+
+        3. point the current.next = prev This is where actual reversing taken place. (at the beginning it will be null , 
+        in this example head node will be like this '<-10' we changed the direction of link.)
+        
+        4. now set the current node as prev. now prev and current both will point to 10.
+        
+        5. now set next as current node.
+
+        Step 4 and 5 we are moving the node position by one level.    
+---------------------------------------------------------------------------------------------
+
+
+
 
 
 
