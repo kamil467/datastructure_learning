@@ -55,7 +55,7 @@ namespace DataStructureAndAlgorithmns.DataStructures.LinkedList.FindNthNodeFromE
 
             Console.WriteLine("Tow Pointer Approach");
 
-            Console.WriteLine($"Element is:{list.GetNodeByPositionFromStart(5).Data}");
+            Console.WriteLine($"Element is:{list.GetNodeByPositionFromEndTwoPointer(5).Data}");
 
             Console.WriteLine($"GFG Solution:{list.getNthFromLast(list.HeadNode,5)}");
         }
@@ -133,13 +133,15 @@ namespace DataStructureAndAlgorithmns.DataStructures.LinkedList.FindNthNodeFromE
         /// Eg: Length = 10 , Nth Node = 3 then the node will be (10-3+1) = 8;
         /// Using the same approach we are traversing from start , this will avoid one loop iteration for finding the length.
         /// P1 - Initially it will be pointed at Nth Position from start.
+        /// To move P1 to Nth Position, iterate list,keep checking the counter for counter > k: After Nth node 
+        /// from start it will became true and now you can start moving P2 by one.
         /// P2 - Points to head node.
         /// every iteration moves P1 and P2 by one position.
         /// When P1 reaches the end then P2 will point to Nth node from end.
         /// </summary>
         /// <param name="position"></param>
         /// <returns></returns>
-        public Node GetNodeByPositionFromStart(int position)
+        public Node GetNodeByPositionFromEndTwoPointer(int position)
         {
             var pointer_1 = this.HeadNode;
             var pointer_2 = this.HeadNode;
