@@ -67,7 +67,7 @@ Application : print numbers in reverse order.
 a) If head is null then set new node as Head 
 b) Traverse in the node where node.NextNode= null. --This is our last node --use while loop -- then set lastNode.NextNode = new Node.
                  or 
-Keep a track of tail node and add a new node as tail.next.                 
+   ###### Keep a track of tail node and add a new node as tail.next.                 
 
 ---------------------------------------------------------------------------------------------------------
 
