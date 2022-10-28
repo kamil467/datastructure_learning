@@ -214,6 +214,11 @@ Using 3 pointers approach. Youtube ref : https://www.youtube.com/watch?v=NhapasN
 
              Explanation Link :https://www.figma.com/file/5RCp3xnwCv253olVvZXxVB/Untitled?node-id=0%3A1
 ---------------------------------------------------------------------------------------------
+#### 8: In-Place Reversal Linked List 
+
+###### In Place refers - Implementing Reverse with given constraint without employing additional memory.
+
+
 
 
 
