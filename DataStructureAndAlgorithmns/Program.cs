@@ -13,6 +13,8 @@ using DataStructureAndAlgorithmns.DataStructures.LinkedList.FindNthNode;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.FindNthNodeFromEnd;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.FindOccurrencesByKey;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.InserAfterGivenNode;
+using DataStructureAndAlgorithmns.DataStructures.LinkedList.Insertion;
+using DataStructureAndAlgorithmns.DataStructures.LinkedList.Palindrome;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.PalindromeInSinglyLinkedList;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.PrintMiddleNode;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.SortedLinkedList;
@@ -48,8 +50,9 @@ namespace DataStructureAndAlgorithmns
             //FindOccurrencesByKey.Run();
             // DetectLoop.Run();
             // DetectLengthOfLoop.Run();
-            PalindromeInSinglyLinkedListUsingStack.Run();
-            
+            //PalindromeInSinglyLinkedListUsingStack.Run();
+            UsingListReverse.Run();
+            //InsertAtEndWithEfficient.Run();
             Console.ReadLine();
 
 

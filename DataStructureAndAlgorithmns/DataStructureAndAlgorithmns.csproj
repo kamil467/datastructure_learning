@@ -44,8 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataStructures\CustomCollection\EmployeeList.cs" />
-    <Compile Include="DataStructures\LinkedList\AddNoteAtFront.cs" />
-    <Compile Include="DataStructures\LinkedList\BasicLinkedList.cs" />
+    <Compile Include="DataStructures\LinkedList\Insertion\AddNoteAtFront.cs" />
+    <Compile Include="DataStructures\LinkedList\Insertion\BasicLinkedList.cs" />
     <Compile Include="DataStructures\LinkedList\CountNumberOfNodes.cs" />
     <Compile Include="DataStructures\LinkedList\DeleteANodeAtGivenPosition.cs" />
     <Compile Include="DataStructures\LinkedList\DeleteFromBegining.cs" />
@@ -57,8 +57,10 @@
     <Compile Include="DataStructures\LinkedList\FindNthNode.cs" />
     <Compile Include="DataStructures\LinkedList\FindNthNodeFromEnd.cs" />
     <Compile Include="DataStructures\LinkedList\FindOccurrencesByKey.cs" />
-    <Compile Include="DataStructures\LinkedList\InsertAfterGivenNode.cs" />
-    <Compile Include="DataStructures\LinkedList\PalindromeInSinglyLinkedListUsingStack.cs" />
+    <Compile Include="DataStructures\LinkedList\Insertion\InsertAfterGivenNode.cs" />
+    <Compile Include="DataStructures\LinkedList\Insertion\InsertAtEndWithEfficient.cs" />
+    <Compile Include="DataStructures\LinkedList\Palindrome\PalindromeInSinglyLinkedListUsingStack.cs" />
+    <Compile Include="DataStructures\LinkedList\Palindrome\UsingListReverse.cs" />
     <Compile Include="DataStructures\LinkedList\PrintMiddleNode.cs" />
     <Compile Include="DataStructures\LinkedList\SortedLinkedList.cs" />
     <Compile Include="Program.cs" />
