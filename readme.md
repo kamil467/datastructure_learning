@@ -67,7 +67,7 @@ Application : print numbers in reverse order.
 a) If head is null then set new node as Head 
 b) Traverse in the node where node.NextNode= null. --This is our last node --use while loop -- then set lastNode.NextNode = new Node.
                  or 
-Keep a track of tail node and add a new node as tail.next.                 
+   ###### Keep a track of tail node and add a new node as tail.next.                 
 
 ---------------------------------------------------------------------------------------------------------
 
@@ -214,6 +214,11 @@ Using 3 pointers approach. Youtube ref : https://www.youtube.com/watch?v=NhapasN
 
              Explanation Link :https://www.figma.com/file/5RCp3xnwCv253olVvZXxVB/Untitled?node-id=0%3A1
 ---------------------------------------------------------------------------------------------
+#### 8: In-Place Reversal Linked List 
+
+###### In Place refers - Implementing Reverse with given constraint without employing additional memory.
+
+
 
 
 
