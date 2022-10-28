@@ -14,6 +14,7 @@ using DataStructureAndAlgorithmns.DataStructures.LinkedList.FindNthNodeFromEnd;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.FindOccurrencesByKey;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.InserAfterGivenNode;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.Insertion;
+using DataStructureAndAlgorithmns.DataStructures.LinkedList.LeetCode_Problems;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.Palindrome;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.PalindromeInSinglyLinkedList;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.PrintMiddleNode;
@@ -51,8 +52,9 @@ namespace DataStructureAndAlgorithmns
             // DetectLoop.Run();
             // DetectLengthOfLoop.Run();
             //PalindromeInSinglyLinkedListUsingStack.Run();
-            UsingListReverse.Run();
+            //UsingListReverse.Run();
             //InsertAtEndWithEfficient.Run();
+            ReverseInPlace.Run();
             Console.ReadLine();
 
 
