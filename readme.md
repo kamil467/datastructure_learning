@@ -208,7 +208,15 @@ Using 3 pointers approach. Youtube ref : https://www.youtube.com/watch?v=NhapasN
         
         5. now set next as current node.
 
-        Step 4 and 5 we are moving the node position by one level.    
+        Step 4 and 5 we are moving the node position by one level. 
+
+        At the end of traversal Previous will point to last node which now has reference towards reverse direction.
+
+        
+
+
+
+
 ---------------------------------------------------------------------------------------------
 
 
