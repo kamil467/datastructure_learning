@@ -212,11 +212,7 @@ Using 3 pointers approach. Youtube ref : https://www.youtube.com/watch?v=NhapasN
 
         At the end of traversal Previous will point to last node which now has reference towards reverse direction.
 
-        
-
-
-
-
+  Explanation Link :https://www.figma.com/file/5RCp3xnwCv253olVvZXxVB/Untitled?node-id=0%3A1
 ---------------------------------------------------------------------------------------------
 
 
