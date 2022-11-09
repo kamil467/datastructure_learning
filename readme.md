@@ -111,7 +111,7 @@ Approach 1:
      3) for each node visited check below condition.
 
             current_node_position+Nth Position > length of list   --> if it is true then current_node is the Nth Node from end.
-Approach 2:
+Approach 2:817736fa60ee1736e61b83df83af6b5c6980c5d8
 
       Fsdast Approach
      Two Pointer Approach.
@@ -119,6 +119,7 @@ Approach 2:
       Eg: Length = 10 , Nth Node = 3 then the node will be (10-3+1) = 8;
       Using the same approach we are traversing from start , this will avoid one loop iteration for finding the length.
      P1 - Initially it will be pointed at Nth Position from start.
+     To move P1 to Nth Position, iterate list,keep checking the counter for counter > k:     After Nth node from start it will became true and now you can start moving P2 by one.
      P2 - Points to head node.
      every iteration moves P1 and P2 by one position.
      When P1 reaches the end then P2 will point to Nth node from end.
