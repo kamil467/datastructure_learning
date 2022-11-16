@@ -21,6 +21,7 @@ using DataStructureAndAlgorithmns.DataStructures.LinkedList.Palindrome;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.PalindromeInSinglyLinkedList;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.PrintMiddleNode;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.SortedLinkedList;
+using DataStructureAndAlgorithmns.DataStructures.LinkedList.Swap;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -58,11 +59,89 @@ namespace DataStructureAndAlgorithmns
             //UsingListReverse.Run();
             //InsertAtEndWithEfficient.Run();
             //ReverseInPlace.Run();
-            DeleteDuplicatedNodesFromList.Run();
-          //  PassByReferenceAndValueUnderstanding.Run();
+            //DeleteDuplicatedNodesFromList.Run();
+            //  PassByReferenceAndValueUnderstanding.Run();
+            //  Console.WriteLine("Pivot Index is :"+ PivotIndex(new int[] { 1, 7, 3, 6, 5, 6 }));
+
+            SwapNodes.Run();
             Console.ReadLine();
+        }
+
+        public static int PivotIndex(int[] nums)
+        {
+            bool isPrefixLoaded = false;
+            for (var i = 0; i < nums.Length; i++)
+            {
+                int leftSum = 0;
+                int rightSum = 0;
+
+                if (i == 0)
+                {
+                    i++;
+                    while (i < nums.Length)
+                    {
+                        rightSum = rightSum + nums[i];
+                        i++;
+                    }
+                    if (rightSum == 0)
+                        return 0;
+
+                    // reset i;
+                    i = 0;
+                    continue;
+                }
+                if (i == nums.Length - 1)
+                {
+                    i = 0;
+                    while (i < nums.Length - 2)
+                    {
+                        leftSum = leftSum + nums[i];
+                        i++;
+                    }
+                    if (leftSum == 0)
+                        return nums.Length - 1;
+
+                    // reset i;
+                    break;
+                }
+
+                // elements > 0 and nums.Length -2
+
+                // get prefix Sum
+                if(!isPrefixLoaded)
+                {
+                    var pSum = PrefixSum(nums);
+
+                    // update element.
+                    Array.Copy(pSum, nums, nums.Length);
+                    isPrefixLoaded = true;
+                }
+           
+                int prev = i - 1;
+                int next = i + 1;
+                int diff1 = nums[i] - nums[prev];
+                int diff2 = nums[next] - nums[i];
+                if (diff1 == diff2)
+                    return i;
 
 
+            }
+
+            return -1;
+        }
+
+        public static int[] PrefixSum(int[] nums)
+        {
+            var prefixSumArray = new int[nums.Length];
+            Array.Copy(nums, prefixSumArray, nums.Length);
+
+            //Prefix Sum Array
+            for (var i = 1; i < prefixSumArray.Length; i++)
+            {
+                int prev = i - 1;
+                prefixSumArray[i] = prefixSumArray[i] + prefixSumArray[prev];
+            }
+            return prefixSumArray;
         }
     }
 
