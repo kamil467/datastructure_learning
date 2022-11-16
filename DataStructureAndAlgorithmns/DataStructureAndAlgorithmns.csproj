@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataStructures\CustomCollection\EmployeeList.cs" />
+    <Compile Include="DataStructures\LinkedList\Delete\DeleteDuplicatedNodesFromList.cs" />
     <Compile Include="DataStructures\LinkedList\Insertion\AddNoteAtFront.cs" />
     <Compile Include="DataStructures\LinkedList\Insertion\BasicLinkedList.cs" />
     <Compile Include="DataStructures\LinkedList\CountNumberOfNodes.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="DataStructures\LinkedList\Palindrome\UsingListReverse.cs" />
     <Compile Include="DataStructures\LinkedList\PrintMiddleNode.cs" />
     <Compile Include="DataStructures\LinkedList\SortedLinkedList.cs" />
+    <Compile Include="DataStructures\PassByReferenceAndValueUnderstanding.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,9 +1,11 @@
-﻿using DataStructureAndAlgorithmns.DataStructures.CustomCollection;
+﻿using DataStructureAndAlgorithmns.DataStructures;
+using DataStructureAndAlgorithmns.DataStructures.CustomCollection;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.AddNoteAtFront;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.Basic;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.CountNumberOfNodes;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.DelefromMiddle;
+using DataStructureAndAlgorithmns.DataStructures.LinkedList.Delete.DeleteDuplicatedNodesFromList;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.DeleteANodeAtGivenPosition;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.DeletefromEnd;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.DetectLengthOfLoop;
@@ -25,6 +27,7 @@ using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace DataStructureAndAlgorithmns
 {
@@ -54,7 +57,9 @@ namespace DataStructureAndAlgorithmns
             //PalindromeInSinglyLinkedListUsingStack.Run();
             //UsingListReverse.Run();
             //InsertAtEndWithEfficient.Run();
-            ReverseInPlace.Run();
+            //ReverseInPlace.Run();
+            DeleteDuplicatedNodesFromList.Run();
+          //  PassByReferenceAndValueUnderstanding.Run();
             Console.ReadLine();
 
 
