@@ -221,6 +221,24 @@ Using 3 pointers approach. Youtube ref : https://www.youtube.com/watch?v=NhapasN
 
 1. Reverse Between position - Implementations : c8073d4e1aba3e7e844c56821a20ed750009d937
 
+--------------------------------------------------------------------------------------------
+
+#### 9: Remove Duplciates Linked List:  87e86f3d
+
+Sorted List : Single loops, maintains previous node and current node pointers.
+###### Unosroted List :
+Approach 1 : 
+ - Brute force , 
+ - using two loops ,
+ - three mainters current - outer loop , prev and  next for inner loop.
+ - Time Complexity :O(N^2)
+
+Approach 2: Using Dictionary, maintains two pointers current and prev.
+ - Add a node to dictinary if not visited.
+ - If a node is already visited then removce it from list.
+ - Time Complexity :O(N)
+----------------------------------------------------------------------------------------------
+
 
 
 
