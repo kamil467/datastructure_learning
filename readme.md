@@ -238,6 +238,18 @@ Approach 2: Using Dictionary, maintains two pointers current and prev.
  - If a node is already visited then removce it from list.
  - Time Complexity :O(N)
 ----------------------------------------------------------------------------------------------
+#### 10: Swap Two Nodes without Changing their Data e349124a
+ 
+ Cases to be Handled:
+  - Node1 or Node2 may or may not be present in Head nodes.
+       - If one of them at head position then simply set the another node as head.
+  - Both Nodes can be positioned adjacent.
+  - any one of them may not be present in the list.
+
+Approach:
+ - Get prev1, prev2 , node1, node2 from single list traversal.
+ - Swap Nodes using temporary node.
+ ------------------------------------------------------------------------------------------------
 
 
 
