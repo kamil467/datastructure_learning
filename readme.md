@@ -249,6 +249,19 @@ Approach 2: Using Dictionary, maintains two pointers current and prev.
 Approach:
  - Get prev1, prev2 , node1, node2 from single list traversal.
  - Swap Nodes using temporary node.
+
+ ##### LeetCode Problem : 2fdba8a7
+ Problem Link : https://leetcode.com/problems/swapping-nodes-in-a-linked-list/description/
+ 
+ Problem Statement : You are given the head of a linked list, and an integer k.
+
+Return the head of the linked list after swapping the values of the kth node from the beginning and the kth node from the end (the list is 1-indexed).
+ - Approach : We need Node1 , Node 2 and their previous nodes.
+ - Node1 ,Previous1 - Look from start.
+ - Node 2, Previous2 - should be from end.(traverse from start but break it when counter+k >      list_length
+ - Cases: Single Node- do nothing just return head, Two Nodes- swap head and tail nodes.
+
+
  ------------------------------------------------------------------------------------------------
 
 
