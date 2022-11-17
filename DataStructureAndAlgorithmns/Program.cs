@@ -21,6 +21,7 @@ using DataStructureAndAlgorithmns.DataStructures.LinkedList.LeetCode_Problems.Sw
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.Palindrome;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.PalindromeInSinglyLinkedList;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.PrintMiddleNode;
+using DataStructureAndAlgorithmns.DataStructures.LinkedList.Reverse;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.SortedLinkedList;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.Swap;
 using System;
@@ -66,7 +67,8 @@ namespace DataStructureAndAlgorithmns
 
             // SwapNodes.Run();
 
-            SwapNodes.Run();
+            // SwapNodes.Run();
+            ListCompareReverse.Run();
             Console.ReadLine();
         }
 

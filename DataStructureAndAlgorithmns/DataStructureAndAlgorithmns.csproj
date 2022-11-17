@@ -65,7 +65,9 @@
     <Compile Include="DataStructures\LinkedList\Palindrome\PalindromeInSinglyLinkedListUsingStack.cs" />
     <Compile Include="DataStructures\LinkedList\Palindrome\UsingListReverse.cs" />
     <Compile Include="DataStructures\LinkedList\PrintMiddleNode.cs" />
+    <Compile Include="DataStructures\LinkedList\Reverse\ListCompareReverse.cs" />
     <Compile Include="DataStructures\LinkedList\SortedLinkedList.cs" />
+    <Compile Include="DataStructures\LinkedList\Swap\PairwiseSwap.cs" />
     <Compile Include="DataStructures\LinkedList\Swap\SwapNodes.cs" />
     <Compile Include="DataStructures\PassByReferenceAndValueUnderstanding.cs" />
     <Compile Include="Program.cs" />
