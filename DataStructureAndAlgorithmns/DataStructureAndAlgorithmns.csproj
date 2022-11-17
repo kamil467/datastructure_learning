@@ -61,6 +61,7 @@
     <Compile Include="DataStructures\LinkedList\Insertion\InsertAfterGivenNode.cs" />
     <Compile Include="DataStructures\LinkedList\Insertion\InsertAtEndWithEfficient.cs" />
     <Compile Include="DataStructures\LinkedList\LeetCode Problems\ReverseInPlace.cs" />
+    <Compile Include="DataStructures\LinkedList\LeetCode Problems\SwapNodes.cs" />
     <Compile Include="DataStructures\LinkedList\Palindrome\PalindromeInSinglyLinkedListUsingStack.cs" />
     <Compile Include="DataStructures\LinkedList\Palindrome\UsingListReverse.cs" />
     <Compile Include="DataStructures\LinkedList\PrintMiddleNode.cs" />

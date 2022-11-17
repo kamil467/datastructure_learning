@@ -17,6 +17,7 @@ using DataStructureAndAlgorithmns.DataStructures.LinkedList.FindOccurrencesByKey
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.InserAfterGivenNode;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.Insertion;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.LeetCode_Problems;
+using DataStructureAndAlgorithmns.DataStructures.LinkedList.LeetCode_Problems.SwapNodes;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.Palindrome;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.PalindromeInSinglyLinkedList;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.PrintMiddleNode;
@@ -28,7 +29,7 @@ using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
-
+using SwapNodes = DataStructureAndAlgorithmns.DataStructures.LinkedList.LeetCode_Problems.SwapNodes.SwapNodes;
 
 namespace DataStructureAndAlgorithmns
 {
@@ -62,6 +63,8 @@ namespace DataStructureAndAlgorithmns
             //DeleteDuplicatedNodesFromList.Run();
             //  PassByReferenceAndValueUnderstanding.Run();
             //  Console.WriteLine("Pivot Index is :"+ PivotIndex(new int[] { 1, 7, 3, 6, 5, 6 }));
+
+            // SwapNodes.Run();
 
             SwapNodes.Run();
             Console.ReadLine();
