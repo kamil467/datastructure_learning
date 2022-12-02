@@ -24,6 +24,7 @@ using DataStructureAndAlgorithmns.DataStructures.LinkedList.PrintMiddleNode;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.Reverse;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.SortedLinkedList;
 using DataStructureAndAlgorithmns.DataStructures.LinkedList.Swap;
+using DataStructureAndAlgorithmns.DataStructures.LinkedList.Swap.PairWise;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -68,7 +69,8 @@ namespace DataStructureAndAlgorithmns
             // SwapNodes.Run();
 
             // SwapNodes.Run();
-            ListCompareReverse.Run();
+            // ListCompareReverse.Run();
+            PairwiseSwap.Run();
             Console.ReadLine();
         }
 
