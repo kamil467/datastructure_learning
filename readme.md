@@ -221,6 +221,8 @@ Using 3 pointers approach. Youtube ref : https://www.youtube.com/watch?v=NhapasN
 
 1. Reverse Between position - Implementations : c8073d4e1aba3e7e844c56821a20ed750009d937
 
+2. Compare Two List and Verify that First List is reverse of Second List.Both list should be traversed only once. ab600fe0
+
 --------------------------------------------------------------------------------------------
 
 #### 9: Remove Duplciates Linked List:  87e86f3d
@@ -263,6 +265,7 @@ Return the head of the linked list after swapping the values of the kth node fro
 
 
  ------------------------------------------------------------------------------------------------
+
 
 
 
